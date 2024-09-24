@@ -12,3 +12,5 @@ ORDER BY ST.student_id, EN.class_grade; /* The directions specifically say to do
                                            This places this list in order by the student ID which has the effect of making
                                            them look like a group. The grade is the secondary attribute which is sorted after
                                            the result is sorted by the student id. */
+
+SELECT class_grade FROM SCHOOL.ENROLLMENTS WHERE student_id =1 AND class_id = 1 AND semester_id = 1
