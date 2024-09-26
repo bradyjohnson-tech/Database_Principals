@@ -1,3 +1,5 @@
+USE SCHOOL;
+
 -- Create role, set/grant its permissions, assign the user to the role.
 CREATE ROLE IF NOT EXISTS 'admin_role';
 GRANT ALL PRIVILEGES ON *.* TO 'admin_role' WITH GRANT OPTION ;

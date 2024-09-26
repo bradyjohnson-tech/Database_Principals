@@ -1,3 +1,5 @@
+USE SCHOOL;
+
 DROP PROCEDURE IF EXISTS addStudent;
 DELIMITER $$
     CREATE PROCEDURE SCHOOL.addStudent(
@@ -112,29 +114,3 @@ DELIMITER $$
             WHERE T.teacher_id = (SELECT getTeacherId(in_teacher_first_name, in_teacher_last_name));
         end $$
 DELIMITER ;
-
-
-/* a different way to skin this cat.
-DROP PROCEDURE IF EXISTS getTeacherStudents;
-DELIMITER $$
-CREATE PROCEDURE getTeacherStudents(in_teacher_first_name VARCHAR(50), in_teacher_last_name VARCHAR(50))
-BEGIN
-    SET @sp_teacher_id := getTeacherId(in_teacher_first_name, in_teacher_last_name);
-    SELECT ST.student_id, ST.first_name, ST.last_name
-    FROM SCHOOL.ENROLLMENTS EN
-             INNER JOIN SCHOOL.STUDENT AS ST ON EN.student_id = ST.student_id
-             INNER JOIN SCHOOL.CLASSES AS CL ON EN.class_id = CL.class_id
-             INNER JOIN SCHOOL.TEACHER AS T ON CL.teacher = T.teacher_id
-    WHERE T.teacher_id = @sp_teacher_id;
-end $$
-DELIMITER ;
-*/
-SET @new_student_id = 0;
-call addStudent('Donald', 'Trump', 'donal.trump6@school.com', '1946-06-14', 100, @new_student_id);
-SELECT @new_student_id;
-/*
-call addStudent('Donald', 'Trump', 'donal.trump8@school.com', '1946-06-14', 100);
-SELECT getTeacherId('Tucker', 'Carlson');
-call SCHOOL.getAllStudents();
-call getTeacherStudents('Tucker', 'Carlson');
-*/

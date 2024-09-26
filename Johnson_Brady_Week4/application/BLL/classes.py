@@ -24,3 +24,10 @@ class Classes:
             self.room_number = i['room_number']
             self.subject = i['subject']
         return self
+
+class_1 = Classes()
+class_1.post(1,124, 'Statistics')
+print(class_1.teacher)
+
+class_1.get(1)
+print(class_1.teacher, class_1.subject)

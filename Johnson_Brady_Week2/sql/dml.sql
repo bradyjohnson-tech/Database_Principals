@@ -1,3 +1,5 @@
+USE SCHOOL;
+
 INSERT INTO SCHOOL.STUDENT (first_name, last_name, email_address, date_of_birth, student_year) VALUES (
     'Brady',
     'Johnson',

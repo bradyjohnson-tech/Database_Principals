@@ -31,3 +31,11 @@ class Teacher:
         self.teacher_id = self.__teacherDal.get_via_function_call(teacher_first_name, teacher_last_name)
         return self
 
+teacher = Teacher()
+teacher.get_via_function_call('maria', 'Von Trapp')
+print(teacher.teacher_first_name)
+
+BBall = Teacher()
+BBall.post("Larry", "Bird", "larry.bird3@school.edu")
+print(BBall.teacher_first_name)
+

@@ -21,3 +21,8 @@ class Semester:
             self.start = i['start']
             self.end = i['end']
         return self
+
+semester = Semester()
+semester.post('1990-01-01', '1991-01-01')
+semester.get(3)
+print(semester.start)

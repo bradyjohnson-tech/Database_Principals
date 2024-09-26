@@ -33,5 +33,10 @@ class Student:
             self.student_year = i['student_year']
         return self
 
+student = Student()
+student.post("Brady", "Johnson", "brady.johnson01@school.com", "1990-01-01", 18)
+student = student.get(student.student_id)
+print(student.first_name)
+
 
 

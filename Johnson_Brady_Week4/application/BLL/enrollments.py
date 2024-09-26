@@ -20,3 +20,10 @@ class Enrollment:
         args = [in_student_id, in_class_id, in_semester_id]
         self.class_grade = self.__enrolmentDAL.get_class_grade(in_student_id, in_class_id, in_semester_id)
         return self
+
+enrollment = Enrollment()
+enrollment.post(1,1,3)
+print(enrollment.student_id)
+enrollment2 = Enrollment()
+enrollment2.get_grade(1,1,1)
+print(enrollment2.class_grade)

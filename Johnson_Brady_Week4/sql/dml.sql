@@ -1,3 +1,5 @@
+USE SCHOOL;
+
 INSERT INTO SCHOOL.STUDENT (first_name, last_name, email_address, date_of_birth, student_year) VALUES (
     'Brady',
     'Johnson',
@@ -31,21 +33,21 @@ INSERT INTO SCHOOL.STUDENT (first_name, last_name, email_address, date_of_birth,
 );
 
 INSERT INTO SCHOOL.TEACHER (teacher_first_name, teacher_last_name, teacher_email) VALUES (
-    "Maria",
-    "Von Trapp",
-    "Maria.VonTrapp@school.com"
+    'Maria',
+    'Von Trapp',
+    'Maria.VonTrapp@school.com'
 );
 
 INSERT INTO SCHOOL.TEACHER (teacher_first_name, teacher_last_name, teacher_email) VALUES (
-     "Gunther",
-     "Spenoza",
-     "Gunther.Spenoza@school.com"
+     'Gunther',
+     'Spenoza',
+     'Gunther.Spenoza@school.com'
  );
 
 INSERT INTO SCHOOL.TEACHER (teacher_first_name, teacher_last_name, teacher_email) VALUES (
-     "Paul",
-     "Abdo",
-     "Paul.Abdo@school.com"
+     'Paul',
+     'Abdo',
+     'Paul.Abdo@school.com'
 );
 
 INSERT INTO SCHOOL.CLASSES(teacher, room_number, subject) VALUES (
