@@ -106,7 +106,7 @@ class View(toga.App):
         self.all_employees_table.data = self.all_employees
 
         # Clear the input fields
-        # self.first_name.value = ""
-        # self.last_name.value = ""
-        # self.email.value = ""
-        # self.hire_date.value = ""
+        self.first_name.value = ""
+        self.last_name.value = ""
+        self.email.value = ""
+        self.hire_date.value = ""
