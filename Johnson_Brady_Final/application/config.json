@@ -1,0 +1,16 @@
+{
+  "Connection": {
+    "Write": {
+      "user": "modify_user",
+      "password": "modify1234",
+      "host": "127.0.0.1",
+      "database": "EMPLOYEES"
+    },
+    "Read": {
+      "user": "read_only",
+      "password": "read1234",
+      "host": "127.0.0.1",
+      "database": "EMPLOYEES"
+    }
+  }
+}
