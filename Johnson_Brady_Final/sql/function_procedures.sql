@@ -19,10 +19,6 @@ END$$
 DELIMITER ;
 
 
-SELECT JOB.job_id FROM EMPLOYEES.JOB Where job_title = 'Disco King';
-SELECT DEPARTMENT.department_id FROM EMPLOYEES.DEPARTMENT WHERE department_name = 'IT';
-
-
 DROP PROCEDURE IF EXISTS getAllEmployeesInfo;
 DELIMITER $$
 CREATE PROCEDURE EMPLOYEES.getAllEmployeesInfo()

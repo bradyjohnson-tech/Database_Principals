@@ -110,3 +110,5 @@ class View(toga.App):
         self.last_name.value = ""
         self.email.value = ""
         self.hire_date.value = ""
+        self.role = toga.Selection(items=role.get(), style=Pack(padding=10))
+        self.department = toga.Selection(items=department.get(), style=Pack(padding=10))
