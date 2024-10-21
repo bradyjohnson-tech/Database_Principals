@@ -11,6 +11,7 @@ CREATE ROLE IF NOT EXISTS 'read_role';
 GRANT SELECT, SHOW VIEW ON EMPLOYEES.* TO 'read_role';
 GRANT 'read_role' TO 'read_only' @'%';
 SET DEFAULT ROLE 'read_role' TO 'read_only'@'%';
+
 GRANT EXECUTE ON PROCEDURE getAllEmployeesInfo TO 'read_only' @'%';
 
 -- Modify

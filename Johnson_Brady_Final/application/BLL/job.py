@@ -1,4 +1,4 @@
-from DAL.job_DAL import JobDAL
+from application.DAL.job_DAL import JobDAL
 
 class Job:
 

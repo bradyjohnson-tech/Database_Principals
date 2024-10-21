@@ -2,9 +2,9 @@ import toga
 from toga.style.pack import COLUMN, Pack
 import toga.widgets
 
-from BLL.employee import Employee
-from BLL.job import Job
-from BLL.department import Department
+from application.BLL.employee import Employee
+from application.BLL.job import Job
+from application.BLL.department import Department
 
 #Instantiate Business Logic Layer
 employee = Employee()

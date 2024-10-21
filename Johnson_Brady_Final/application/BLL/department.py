@@ -1,4 +1,4 @@
-from DAL.department_DAL import DepartmentDAL
+from application.DAL.department_DAL import DepartmentDAL
 
 class Department:
     def __init__(self):

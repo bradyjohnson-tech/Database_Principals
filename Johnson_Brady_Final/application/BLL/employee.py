@@ -1,4 +1,4 @@
-from DAL.employee_DAL import EmployeeDAL
+from application.DAL.employee_DAL import EmployeeDAL
 
 class Employee:
     employee_id = None,
